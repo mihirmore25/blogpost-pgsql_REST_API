@@ -1,0 +1,268 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "BlogPostPgSQL",
+    "dateExported": "2024-01-23T11:51:53.606Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "c734f899-3803-4cbb-a71d-54da434dcddf",
+            "name": "Users",
+            "containerId": "",
+            "created": "2024-01-22T14:03:48.870Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "e40568e7-f293-4d6f-ace8-28534a97d761",
+            "name": "Posts",
+            "containerId": "",
+            "created": "2024-01-22T14:04:13.601Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "0ceb40d9-2024-48f2-ad9e-a786d129a02a",
+            "name": "Auth",
+            "containerId": "",
+            "created": "2024-01-23T11:19:58.688Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "e3075569-ab3b-4c24-be8d-9c4783006316",
+            "colId": "6eb32aac-9828-4ac3-8c00-744512a97b2f",
+            "containerId": "e40568e7-f293-4d6f-ace8-28534a97d761",
+            "name": "Update Post",
+            "url": "http://localhost:3000/api/posts/8",
+            "method": "PUT",
+            "sortNum": 10000,
+            "created": "2024-01-22T14:01:44.831Z",
+            "modified": "2024-01-22T14:01:44.831Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"description\": \"This is HL7 Data Parser Blog\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "4bec6140-e07e-4ace-bbb9-7636820fe8ca",
+            "colId": "6eb32aac-9828-4ac3-8c00-744512a97b2f",
+            "containerId": "0ceb40d9-2024-48f2-ad9e-a786d129a02a",
+            "name": "Register New User",
+            "url": "http://localhost:3000/api/auth/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-01-22T14:03:25.503Z",
+            "modified": "2024-01-22T14:03:25.503Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"onkar\",\n  \"email\": \"onkar@gmail.com\",\n  \"password\": \"onkar@123\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f2e3072b-3467-4ff6-b996-f25da6af0e89",
+            "colId": "6eb32aac-9828-4ac3-8c00-744512a97b2f",
+            "containerId": "e40568e7-f293-4d6f-ace8-28534a97d761",
+            "name": "Add Post",
+            "url": "http://localhost:3000/api/posts/",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-01-22T14:02:01.334Z",
+            "modified": "2024-01-22T14:02:01.334Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Adobe Photoshop\",\n  \"description\": \"This is a adobe photoshop blog\",\n  \"img\": \"img\",\n  \"cat\": \"design\",\n  \"date\": \"22-01-2024\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "8f0298d5-d0d9-4a2e-bfeb-b6e35f519e3b",
+            "colId": "6eb32aac-9828-4ac3-8c00-744512a97b2f",
+            "containerId": "0ceb40d9-2024-48f2-ad9e-a786d129a02a",
+            "name": "Login User",
+            "url": "http://localhost:3000/api/auth/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-01-22T14:03:16.416Z",
+            "modified": "2024-01-23T11:17:52.983Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"onkar\",\n  \"password\": \"onkar@123\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "bfc98608-9138-47a2-9374-a0ae6e83c818",
+            "colId": "6eb32aac-9828-4ac3-8c00-744512a97b2f",
+            "containerId": "e40568e7-f293-4d6f-ace8-28534a97d761",
+            "name": "Delete Post",
+            "url": "http://localhost:3000/api/posts/4",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2024-01-22T14:02:13.989Z",
+            "modified": "2024-01-22T14:02:13.989Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "df3ba5dc-cae6-4725-b530-103a4069bab2",
+            "colId": "6eb32aac-9828-4ac3-8c00-744512a97b2f",
+            "containerId": "0ceb40d9-2024-48f2-ad9e-a786d129a02a",
+            "name": "Logout User",
+            "url": "http://localhost:3000/api/auth/logout",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-01-22T14:03:06.222Z",
+            "modified": "2024-01-22T14:03:06.222Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f367e5c1-8aa6-498f-80d4-a7f4d2efdf09",
+            "colId": "6eb32aac-9828-4ac3-8c00-744512a97b2f",
+            "containerId": "e40568e7-f293-4d6f-ace8-28534a97d761",
+            "name": "Get Single Post",
+            "url": "http://localhost:3000/api/posts/8",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-01-22T14:02:30.011Z",
+            "modified": "2024-01-23T11:49:45.765Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7424feb3-7310-4362-b785-65846b045243",
+            "colId": "6eb32aac-9828-4ac3-8c00-744512a97b2f",
+            "containerId": "e40568e7-f293-4d6f-ace8-28534a97d761",
+            "name": "All Posts",
+            "url": "http://localhost:3000/api/posts/",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-01-22T14:02:39.909Z",
+            "modified": "2024-01-22T14:02:39.909Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "15c6ae11-df39-4ed5-89f9-85705590bf3a",
+            "colId": "6eb32aac-9828-4ac3-8c00-744512a97b2f",
+            "containerId": "e40568e7-f293-4d6f-ace8-28534a97d761",
+            "name": "Find Posts With Category",
+            "url": "http://localhost:3000/api/posts?cat=IT",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-01-22T14:02:54.956Z",
+            "modified": "2024-01-23T11:50:07.530Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "cat",
+                    "value": "IT",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "6cd1d782-cb0a-4565-83af-b3e611cac272",
+            "colId": "6eb32aac-9828-4ac3-8c00-744512a97b2f",
+            "containerId": "c734f899-3803-4cbb-a71d-54da434dcddf",
+            "name": "All Users",
+            "url": "http://localhost:3000/api/users/",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-01-22T14:04:48.355Z",
+            "modified": "2024-01-22T14:07:34.172Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "016724e5-3a54-4288-a08d-4132e3df2f98",
+            "colId": "6eb32aac-9828-4ac3-8c00-744512a97b2f",
+            "containerId": "c734f899-3803-4cbb-a71d-54da434dcddf",
+            "name": "Get User",
+            "url": "http://localhost:3000/api/users/11",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2024-01-22T14:09:24.835Z",
+            "modified": "2024-01-23T09:39:46.759Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c6a7cf96-9277-41ec-bf3e-c9462b3b1a90",
+            "colId": "6eb32aac-9828-4ac3-8c00-744512a97b2f",
+            "containerId": "c734f899-3803-4cbb-a71d-54da434dcddf",
+            "name": "Add User",
+            "url": "http://localhost:3000/api/users/",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2024-01-22T14:14:47.119Z",
+            "modified": "2024-01-22T14:26:05.234Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"dronal\",\n  \"email\": \"dronal@gmail.com\",\n  \"password\": \"dronal@123\",\n  \"img\": null\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "efbc1e5d-6e99-47ed-b8bc-46fe6b6e5a49",
+            "colId": "6eb32aac-9828-4ac3-8c00-744512a97b2f",
+            "containerId": "c734f899-3803-4cbb-a71d-54da434dcddf",
+            "name": "Delete User",
+            "url": "http://localhost:3000/api/users/6",
+            "method": "DELETE",
+            "sortNum": 130000,
+            "created": "2024-01-22T14:53:08.463Z",
+            "modified": "2024-01-23T11:18:45.105Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "18239b4f-426e-469e-84d4-9cc7f95d0c28",
+            "colId": "6eb32aac-9828-4ac3-8c00-744512a97b2f",
+            "containerId": "c734f899-3803-4cbb-a71d-54da434dcddf",
+            "name": "Update User",
+            "url": "http://localhost:3000/api/users/6",
+            "method": "PUT",
+            "sortNum": 140000,
+            "created": "2024-01-22T16:30:50.949Z",
+            "modified": "2024-01-23T11:18:53.469Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"onkar\",\n  \"email\": \"onkarmore@gmail.com\",\n  \"password\": \"onkar@123\",\n  \"img\": null\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "http://localhost:3000/api/auth/register"
+        }
+    }
+}
